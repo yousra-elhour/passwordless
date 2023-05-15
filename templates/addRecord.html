@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Student Record</title>
+  </head>
+  <body>
+    <h1>Add Student Record</h1>
+    <form
+      method="POST"
+      action="{{ url_for('add_student_record') }}"
+      enctype="multipart/form-data"
+    >
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required /><br /><br />
+      <label for="file">File:</label>
+      <input
+        type="file"
+        name="file"
+        id="file"
+        accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+        required
+      /><br /><br />
+      <input type="submit" value="Add Record" />
+    </form>
+  </body>
+</html>

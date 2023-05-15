@@ -1,0 +1,7 @@
+Flask==2.0.1
+boto3==1.18.13
+cryptography==3.4.7
+hashlib==20081119
+PyJWT==2.1.0
+requests==2.25.1
+sqlite3==2.6.0

@@ -1,0 +1,54 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------
+      General Styles
+  --------------------------*/
+
+html {
+  overflow: hidden;
+}
+
+a,
+a:visited {
+  outline: none;
+  color: #389dc1;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+section,
+footer,
+header,
+aside {
+  display: block;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-top: 15px;
+}
+
+/*-------------------------
+      The main page elements
+  --------------------------*/
+
+body {
+  font: 15px/1.3 "Raleway", sans-serif;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}

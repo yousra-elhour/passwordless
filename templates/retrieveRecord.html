@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View Student Record</title>
+  </head>
+  <body>
+    <h1>View Student Record</h1>
+    <form method="POST">
+      <label for="record_id">Record ID:</label>
+      <input type="text" id="record_id" name="record_id" required />
+      <button type="submit">View Record</button>
+    </form>
+    {% if record %}
+    <h2>{{ record['name'] }}</h2>
+    <p>Student ID: {{ record['student_id'] }}</p>
+    <p>GPA: {{ record['gpa'] }}</p>
+    <p>Transcript:</p>
+    <p>{{ record['transcript'] }}</p>
+    {% elif form_submitted %}
+    <p>No record found with ID {{ form_submitted }}.</p>
+    {% endif %}
+  </body>
+</html>
